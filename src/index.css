@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #22c55e;
+  --color-accent-yellow: #facc15;
+  --color-neutral-mid: #e2e8f0;
+}
+
+:root {
+  background-color: #f8fafc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+}
+
+/* Updated root to fill the entire screen */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+}
