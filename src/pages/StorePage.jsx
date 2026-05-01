@@ -57,8 +57,13 @@ export default function StorePage({ cart, addToCart, removeFromCart, totalItems 
             <span className="text-xl font-black block">{totalItems} Items</span>
             <p className="text-[10px] font-bold text-slate-400 uppercase m-0">In Your Cart</p>
           </div>
-          <button className="bg-accent-yellow px-10 py-3 rounded-xl font-black shadow-md hover:brightness-95 active:scale-95 transition-all">
-            Checkout →
+          <button>
+            <Link 
+              to="/checkout"
+              className="bg-accent-yellow px-10 py-3 rounded-xl font-black shadow-md hover:brightness-95 active:scale-95 transition-all no-underline text-black"
+            >
+              Checkout →
+            </Link>
           </button>
         </div>
       </footer>

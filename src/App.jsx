@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WelcomePage from "./pages/WelcomePage";
 import StorePage from "./pages/StorePage";
+import CheckoutPage from "./pages/CheckoutPage"; // New Import
 
 export default function App() {
   const [cart, setCart] = useState({});
@@ -22,7 +23,6 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<WelcomePage />} />
-        {/* The :category? means the category is optional */}
         <Route path="/store/:category?" element={
           <StorePage 
             cart={cart} 
@@ -30,6 +30,9 @@ export default function App() {
             removeFromCart={removeFromCart} 
             totalItems={totalItems} 
           />
+        } />
+        <Route path="/checkout" element={
+          <CheckoutPage cart={cart} totalItems={totalItems} />
         } />
       </Routes>
     </Router>
