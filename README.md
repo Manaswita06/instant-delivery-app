@@ -27,7 +27,7 @@ Installation:
     
     npm install
     ```
-Install React Router (if not already installed):
+3. Install React Router (if not already installed):
     ```
     Bash
     
